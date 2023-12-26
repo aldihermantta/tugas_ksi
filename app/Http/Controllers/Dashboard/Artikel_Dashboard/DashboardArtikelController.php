@@ -7,6 +7,8 @@ use App\Http\Controllers\Controller;
 use App\Models\Artikel;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\File;
+use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\DB;
 
@@ -21,7 +23,6 @@ class DashboardArtikelController extends Controller
     {
         $artikel = Artikel::all();
         $pageTitle = 'Artikel';
-
         return view('dashboard.artikel.index', compact('artikel', 'pageTitle'));
     }
 
@@ -32,7 +33,8 @@ class DashboardArtikelController extends Controller
      */
     public function create()
     {
-        return view('dashboard.artikel.create');
+        $pageTitle = 'Artikel';
+        return view('dashboard.artikel.create', compact("pageTitle"));
     }
 
     /**
@@ -46,36 +48,63 @@ class DashboardArtikelController extends Controller
         $this->validate(
             $request,
             [
-                'nama'  => ['required', 'max:255'],
                 'judul' => ['required', 'max:255', 'unique:artikels,judul'],
-                'thumbnail_artikel' => ['required', 'image', 'mimes:jpg,jpeg,png', 'max:5000'],
+                'content' => ['required']
             ],
             [
-                'nama.required' => 'Penulis Artikel Wajib Di-isi',
-                'nama.max' => 'Pengisian Karakter Nama Terlalu Banyak',
-
                 'judul.required' => 'Judul Artikel Wajib Di-isi',
                 'judul.max' => 'Pengisian Karakter Judul Terlalu Banyak',
                 'judul.unique' => 'Judul Artikel Itu Sudah Ada',
-
-                'thumbnail_artikel.required' => 'Thumbnail Artikel Wajib Di-isi',
-                'thumbnail_artikel.image' => 'Harus Berupa Gambar',
-                'thumbnail_artikel.mimes' => 'Jenis File Yang Boleh JPG,JPEG,PNG',
-                'thumbnail_artikel.max' => 'Ukuran Gambar Terlalu Besar'
+                'content.required' => "Konten Harus Tersedia"
             ]
         );
 
-        // Upload Thumbnail
-        $thumbnail = $request->file('thumbnail_artikel');
-        $thumbnail->storeAs('public/thumbnail_artikel', $thumbnail->hashName());
+        $dom = new \DomDocument();
+        $dom->loadHtml($request->content, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
+        $imageFile = $dom->getElementsByTagName('img');
+
+        $tumblr = "";
+
+        foreach ($imageFile as $item => $image) {
+
+            if ($item == 0) {
+                $tumblr = "";
+            }
+
+            $data = $image->getAttribute('src');
+            list($type, $data) = explode(';', $data);
+            list(, $data) = explode(',', $data);
+            $imgeData = base64_decode($data);
+
+            $slug = Str::of($request->judul)->slug('-');
+            $directory = "/upload/{$slug}";
+            $image_name = "{$directory}/" . time() . $item . '.png';
+
+            $path = public_path($directory); // Set the directory path
+
+            if ($item == 0) {
+                $tumblr = $image_name;
+            }
+
+            // Check if directory exists, if not, create it
+            if (!File::exists($path)) {
+                File::makeDirectory($path, $mode = 0755, true, true);
+            }
+
+            $imagePath = public_path($image_name);
+            file_put_contents($imagePath, $imgeData);
+
+            $image->removeAttribute('src');
+            $image->setAttribute('src', $image_name);
+        }
+
 
         $artikel = new Artikel;
         $artikel->user_id = Auth::user()->id;
-        $artikel->name = $request->nama;
         $artikel->judul = $request->judul;
         $artikel->slug = Str::of($request->judul)->slug('-');
-        $artikel->thumbnail = $thumbnail->hashName();
-        $artikel->content = $request->content;
+        $artikel->content = $dom->saveHTML();
+        $artikel->tumblr = $tumblr;
         $artikel->save();
 
         return redirect()->route('artikel.index')->with('success', 'Artikel Baru Berhasil Ditambahkan');
@@ -101,8 +130,9 @@ class DashboardArtikelController extends Controller
      */
     public function edit($judul)
     {
+        $pageTitle = 'Artikel';
         $artikel = Artikel::where('slug', $judul)->first();
-        return view('dashboard.artikel.edit', compact('artikel'));
+        return view('dashboard.artikel.edit', compact('artikel', 'pageTitle'));
     }
 
     /**
@@ -115,54 +145,65 @@ class DashboardArtikelController extends Controller
     public function update(Request $request, $id)
     {
         $artikel = Artikel::find($id);
+
         $this->validate(
             $request,
             [
-                'nama'  => ['required', 'max:255'],
-                'judul' => ['required', 'max:255', 'unique:artikels,judul,' . $artikel->id],
-                'thumbnail_artikel' => ['image', 'mimes:jpg,jpeg,png', 'max:5000'],
+                'judul' => ['required', 'max:255', 'unique:artikels,id'],
+                'content' => ['required']
             ],
             [
-                'nama.required' => 'Penulis Artikel Wajib Di-isi',
-                'nama.max' => 'Pengisian Karakter Terlalu Banyak',
-
                 'judul.max' => 'Pengisian Karakter Judul Terlalu Banyak',
                 'judul.unique' => 'Judul Artikel Itu Sudah Ada',
-
-                'thumbnail_artikel.image' => 'Harus Berupa Gambar',
-                'thumbnail_artikel.mimes' => 'Jenis File Yang Boleh JPG,JPEG,PNG',
-                'thumbnail_artikel.max' => 'Ukuran Gambar Terlalu Besar'
+                'content.required' => "Konten Harus Tersedia"
             ]
         );
 
-        if ($request->file('thumbnail_artikel')) {
-            // Upload New Thumbnail
+        $dom = new \DomDocument();
+        $dom->loadHtml($request->content, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
+        $slug = Str::of($artikel->judul)->slug('-');
+        $imageFile = $dom->getElementsByTagName('img');
+        $directory = "/upload/{$slug}";
+        $path = public_path($directory); // Set the directory path
 
-            $thumbnail = $request->file('thumbnail_artikel');
-            $thumbnail->storeAs('public/thumbnail_artikel', $thumbnail->hashName());
+        $tumblr = "";
 
-            // Delete Old Thumbnail
-            Storage::delete('public/thumbnail_artikel/' . $artikel->thumbnail);
+        File::cleanDirectory($path);
 
-            $artikel->user_id = Auth::user()->id;
-            $artikel->name = $request->nama;
-            $artikel->judul = $request->judul;
-            $artikel->slug = Str::of($request->judul)->slug('-');
-            $artikel->thumbnail = $thumbnail->hashName();
-            $artikel->content = $request->content;
-            $artikel->save();
-        } else {
-            $artikel->user_id = Auth::user()->id;
-            $artikel->name = $request->nama;
-            $artikel->judul = $request->judul;
-            $artikel->slug = Str::of($request->judul)->slug('-');
-            $artikel->content = $request->content;
-            $artikel->save();
+        foreach ($imageFile as $item => $image) {
+            $data = $image->getAttribute('src');
+            list($type, $data) = explode(';', $data);
+            list(, $data) = explode(',', $data);
+            $imgeData = base64_decode($data);
+
+            $image_name = "{$directory}/" . time() . $item . '.png';
+
+            if ($item == 0) {
+                $tumblr = $image_name;
+            }
+
+            // Check if directory exists, if not, create it
+            if (!File::exists($path)) {
+                File::makeDirectory($path, $mode = 0755, true, true);
+            }
+
+            $imagePath = public_path($image_name);
+            file_put_contents($imagePath, $imgeData);
+
+            $image->removeAttribute('src');
+            $image->setAttribute('src', $image_name);
         }
 
-        return redirect()->route('artikel.index')
-            ->with('success', 'Artikel updated successfully');
+        $artikel->user_id = Auth::user()->id;
+        $artikel->judul = $request->judul;
+        $artikel->tumblr = $tumblr;
+        $artikel->slug = Str::of($request->judul)->slug('-');
+        $artikel->content = $request->content;
+        $artikel->save();
+
+        return redirect()->route('artikel.index')->with('success', 'Artikel updated successfully');
     }
+
 
     /**
      * Remove the specified resource from storage.
@@ -173,7 +214,9 @@ class DashboardArtikelController extends Controller
     public function destroy($id)
     {
         $artikel = Artikel::find($id);
-        Storage::delete('public/thumbnail_artikel/' . $artikel->thumbnail);
+        $directory = "/upload/{$artikel->slug}";
+        $path = public_path($directory); // Set the directory path
+        File::cleanDirectory($path);
         $artikel->delete();
         return redirect()->route('artikel.index')->with('success', 'Artikel ini berhasil dihapus');
     }

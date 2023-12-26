@@ -30,7 +30,6 @@ Route::prefix('auth')->group(function () {
     Route::get('/login', [AuthController::class, 'index'])->name('auth.login');
     Route::post('/login', [AuthController::class, 'authenticate'])->name('auth.authenticate');
     Route::get('/logout', [AuthController::class, 'logout'])->name('auth.logout');
-
 });
 
 Route::controller(DashboardController::class)->group(function () {
@@ -41,6 +40,7 @@ Route::controller(DashboardController::class)->group(function () {
 Route::resource('dashboard/artikel', DashboardArtikelController::class, [
     'names' => [
         'index' => 'artikel.index',
-        // 'show' => 'artikel.show',
+        'create' => 'artikel.create',
+        'store' => 'artikel.store'
     ]
 ]);
