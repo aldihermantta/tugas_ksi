@@ -35,7 +35,7 @@
                </header> --}}
 
                <div class="page-heading">
-                    <h3>Profile Statistics</h3>
+                    <h3>{{ $pageTitle }}</h3>
                </div>
 
                <div class="page-content">
