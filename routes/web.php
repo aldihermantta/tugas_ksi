@@ -1,8 +1,13 @@
 <?php
 
+// Routes Khusus Landing Pages
 use Illuminate\Support\Facades\Route;
+
+// Routes Khusus Dashboard
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Dashboard\DashboardController;
+use App\Http\Controllers\Dashboard\Artikel_Dashboard\DashboardArtikelController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -21,14 +26,21 @@ Route::get('/', function () {
 
 
 //admin
-Route::prefix('auth')
-    ->group(function () {
-       Route::get('/login', [AuthController::class, 'index'])->name('auth.login');
-        Route::post('/login', [AuthController::class, 'authenticate'])->name('auth.authenticate');
-        Route::get('/logout', [AuthController::class, 'logout'])->name('auth.logout');
-    });
+Route::prefix('auth')->group(function () {
+    Route::get('/login', [AuthController::class, 'index'])->name('auth.login');
+    Route::post('/login', [AuthController::class, 'authenticate'])->name('auth.authenticate');
+    Route::get('/logout', [AuthController::class, 'logout'])->name('auth.logout');
 
-Route::controller(DashboardController::class)
-    ->group(function () {
-        Route::get('/dashboard', 'index')->name('dashboard');
-    });
+});
+
+Route::controller(DashboardController::class)->group(function () {
+    Route::get('/dashboard', 'index')->name('dashboard');
+});
+
+// ARTIKEL
+Route::resource('dashboard/artikel', DashboardArtikelController::class, [
+    'names' => [
+        'index' => 'artikel.index',
+        // 'show' => 'artikel.show',
+    ]
+]);
