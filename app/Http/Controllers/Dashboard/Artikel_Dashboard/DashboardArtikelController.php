@@ -65,6 +65,12 @@ class DashboardArtikelController extends Controller
 
         $tumblr = "";
 
+        $artikel = new Artikel;
+        $artikel->user_id = Auth::user()->id;
+        $artikel->judul = $request->judul;
+        $artikel->slug = Str::of($request->judul)->slug('-');
+        $artikel->save();
+
         foreach ($imageFile as $item => $image) {
 
             if ($item == 0) {
@@ -76,8 +82,8 @@ class DashboardArtikelController extends Controller
             list(, $data) = explode(',', $data);
             $imgeData = base64_decode($data);
 
-            $slug = Str::of($request->judul)->slug('-');
-            $directory = "/upload/{$slug}";
+            $id = $artikel->id;
+            $directory = "/upload/{$id}";
             $image_name = "{$directory}/" . time() . $item . '.png';
 
             $path = public_path($directory); // Set the directory path
@@ -98,11 +104,6 @@ class DashboardArtikelController extends Controller
             $image->setAttribute('src', $image_name);
         }
 
-
-        $artikel = new Artikel;
-        $artikel->user_id = Auth::user()->id;
-        $artikel->judul = $request->judul;
-        $artikel->slug = Str::of($request->judul)->slug('-');
         $artikel->content = $dom->saveHTML();
         $artikel->tumblr = $tumblr;
         $artikel->save();
@@ -161,37 +162,39 @@ class DashboardArtikelController extends Controller
 
         $dom = new \DomDocument();
         $dom->loadHtml($request->content, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
-        $slug = Str::of($artikel->judul)->slug('-');
+        $id = $artikel->id;
         $imageFile = $dom->getElementsByTagName('img');
-        $directory = "/upload/{$slug}";
+        $directory = "/upload/{$id}";
         $path = public_path($directory); // Set the directory path
 
         $tumblr = "";
 
-        File::cleanDirectory($path);
-
         foreach ($imageFile as $item => $image) {
+
             $data = $image->getAttribute('src');
-            list($type, $data) = explode(';', $data);
-            list(, $data) = explode(',', $data);
-            $imgeData = base64_decode($data);
+            if (count(explode(';', $data)) > 1 && count(explode(',', $data))) {
 
-            $image_name = "{$directory}/" . time() . $item . '.png';
+                list($type, $data) = explode(';', $data);
+                list(, $data) = explode(',', $data);
+                $imgeData = base64_decode($data);
 
-            if ($item == 0) {
-                $tumblr = $image_name;
+                $image_name = "{$directory}/" . time() . $item . '.png';
+
+                if ($item == 0) {
+                    $tumblr = $image_name;
+                }
+
+                // Check if directory exists, if not, create it
+                if (!File::exists($path)) {
+                    File::makeDirectory($path, $mode = 0755, true, true);
+                }
+
+                $imagePath = public_path($image_name);
+                file_put_contents($imagePath, $imgeData);
+
+                $image->removeAttribute('src');
+                $image->setAttribute('src', $image_name);
             }
-
-            // Check if directory exists, if not, create it
-            if (!File::exists($path)) {
-                File::makeDirectory($path, $mode = 0755, true, true);
-            }
-
-            $imagePath = public_path($image_name);
-            file_put_contents($imagePath, $imgeData);
-
-            $image->removeAttribute('src');
-            $image->setAttribute('src', $image_name);
         }
 
         $artikel->user_id = Auth::user()->id;
@@ -214,7 +217,7 @@ class DashboardArtikelController extends Controller
     public function destroy($id)
     {
         $artikel = Artikel::find($id);
-        $directory = "/upload/{$artikel->slug}";
+        $directory = "/upload/{$artikel->id}";
         $path = public_path($directory); // Set the directory path
         File::cleanDirectory($path);
         $artikel->delete();
