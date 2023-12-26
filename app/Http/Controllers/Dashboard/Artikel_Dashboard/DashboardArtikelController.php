@@ -167,8 +167,6 @@ class DashboardArtikelController extends Controller
         $directory = "/upload/{$id}";
         $path = public_path($directory); // Set the directory path
 
-        $tumblr = "";
-
         foreach ($imageFile as $item => $image) {
 
             $data = $image->getAttribute('src');
@@ -194,12 +192,12 @@ class DashboardArtikelController extends Controller
 
                 $image->removeAttribute('src');
                 $image->setAttribute('src', $image_name);
+                $artikel->tumblr = $tumblr;
             }
         }
 
         $artikel->user_id = Auth::user()->id;
         $artikel->judul = $request->judul;
-        $artikel->tumblr = $tumblr;
         $artikel->slug = Str::of($request->judul)->slug('-');
         $artikel->content = $request->content;
         $artikel->save();
