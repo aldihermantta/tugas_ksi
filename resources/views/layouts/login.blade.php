@@ -46,7 +46,7 @@
     <script src="{{ asset('Assets/js/help.js') }}"></script>
     <script src="{{ asset('Assets/dist/js/bootstrap.bundle.min.js') }}"></script>
     <div id="auth">
-          @yield('content')
+        @yield('content')
     </div>
 </body>
 
