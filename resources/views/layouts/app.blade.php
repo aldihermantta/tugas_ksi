@@ -106,7 +106,7 @@
                         <a href="" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animated bounceInLeft">Know More</a>
                     </div>
                     <div class="col-lg-5 col-md-12">
-                        <img src="img/hero.png" class="img-fluid rounded animated zoomIn" alt="">
+                        <img src="{{ asset('Assets/img/hero.png') }}" class="img-fluid rounded animated zoomIn" alt="">
                     </div>
                 </div>
             </div>
@@ -119,7 +119,7 @@
             <div class="container">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
-                        <img src="img/about.jpg" class="img-fluid rounded" alt="">
+                        <img src="{{ asset('Assets/img/about.jpg') }}" class="img-fluid rounded" alt="">
                     </div>
                     <div class="col-lg-7 wow bounceInUp" data-wow-delay="0.3s">
                         <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">About Us</small>
@@ -361,73 +361,73 @@
                                     <div class="row g-4">
                                         <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s">
                                             <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="img/event-1.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-1.jpg') }}" alt="">
                                                 <div class="event-overlay d-flex flex-column p-4">
                                                     <h4 class="me-auto">Wedding</h4>
-                                                    <a href="img/event-1.jpg" data-lightbox="event-1" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    <a href="{{ asset('Assets/img/event-1.jpg') }}" data-lightbox="event-1" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.3s">
                                             <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="img/event-2.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-2.jpg') }}" alt="">
                                                 <div class="event-overlay d-flex flex-column p-4">
                                                     <h4 class="me-auto">Corporate</h4>
-                                                    <a href="img/event-2.jpg" data-lightbox="event-2" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    <a href="{{ asset('Assets/img/event-2.jpg') }}" data-lightbox="event-2" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.5s">
                                             <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="img/event-3.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-3.jpg') }}" alt="">
                                                 <div class="event-overlay d-flex flex-column p-4">
                                                     <h4 class="me-auto">Wedding</h4>
-                                                    <a href="img/event-3.jpg" data-lightbox="event-3" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    <a href="{{ asset('Assets/img/event-3.jpg') }}" data-lightbox="event-3" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
                                             <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="img/event-4.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-4.jpg') }}" alt="">
                                                 <div class="event-overlay d-flex flex-column p-4">
                                                     <h4 class="me-auto">Buffet</h4>
-                                                    <a href="img/event-4.jpg" data-lightbox="event-4" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    <a href="{{ asset('Assets/img/event-4.jpg') }}" data-lightbox="event-4" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s">
                                             <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="img/event-5.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-5.jpg') }}" alt="">
                                                 <div class="event-overlay d-flex flex-column p-4">
                                                     <h4 class="me-auto">Cocktail</h4>
-                                                    <a href="img/event-5.jpg" data-lightbox="event-5" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    <a href="{{ asset('Assets/img/event-5.jpg') }}" data-lightbox="event-5" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.3s">
                                             <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="img/event-6.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-6.jpg') }}" alt="">
                                                 <div class="event-overlay d-flex flex-column p-4">
                                                     <h4 class="me-auto">Wedding</h4>
-                                                    <a href="img/event-6.jpg" data-lightbox="event-6" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    <a href="{{ asset('Assets/img/event-6.jpg') }}" data-lightbox="event-6" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.5s">
                                             <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="img/event-7.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-7.jpg') }}" alt="">
                                                 <div class="event-overlay d-flex flex-column p-4">
                                                     <h4 class="me-auto">Buffet</h4>
-                                                    <a href="img/event-7.jpg" data-lightbox="event-7" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    <a href="{{ asset('Assets/img/event-7.jpg') }}" data-lightbox="event-7" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
                                             <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="img/event-8.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-8.jpg') }}" alt="">
                                                 <div class="event-overlay d-flex flex-column p-4">
                                                     <h4 class="me-auto">Corporate</h4>
-                                                    <a href="img/event-8.jpg" data-lightbox="event-17" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    <a href="{{ asset('Assets/img/event-8.jpg') }}" data-lightbox="event-17" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -441,19 +441,19 @@
                                     <div class="row g-4">
                                         <div class="col-md-6 col-lg-3">
                                             <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="img/event-1.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-1.jpg') }}" alt="">
                                                 <div class="event-overlay d-flex flex-column p-4">
                                                     <h4 class="me-auto">Wedding</h4>
-                                                    <a href="img/01.jpg" data-lightbox="event-8" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    <a href="{{ asset('Assets/img/01.jpg') }}" data-lightbox="event-8" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-lg-3">
                                             <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="img/event-2.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-2.jpg') }}" alt="">
                                                 <div class="event-overlay d-flex flex-column p-4">
                                                     <h4 class="me-auto">Wedding</h4>
-                                                    <a href="img/01.jpg" data-lightbox="event-9" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    <a href="{{ asset('Assets/img/01.jpg') }}" data-lightbox="event-9" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -467,19 +467,19 @@
                                     <div class="row g-4">
                                         <div class="col-md-6 col-lg-3">
                                             <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="img/event-3.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-3.jpg') }}" alt="">
                                                 <div class="event-overlay d-flex flex-column p-4">
                                                     <h4 class="me-auto">Corporate</h4>
-                                                    <a href="img/01.jpg" data-lightbox="event-10" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    <a href="{{ asset('Assets/img/01.jpg') }}" data-lightbox="event-10" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-lg-3">
                                             <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="img/event-4.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-4.jpg') }}" alt="">
                                                 <div class="event-overlay d-flex flex-column p-4">
                                                     <h4 class="me-auto">Corporate</h4>
-                                                    <a href="img/01.jpg" data-lightbox="event-11" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    <a href="{{ asset('Assets/img/01.jpg') }}" data-lightbox="event-11" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -493,19 +493,19 @@
                                     <div class="row g-4">
                                         <div class="col-md-6 col-lg-3">
                                             <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="img/event-5.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-5.jpg') }}" alt="">
                                                 <div class="event-overlay d-flex flex-column p-4">
                                                     <h4 class="me-auto">Cocktail</h4>
-                                                    <a href="img/01.jpg" data-lightbox="event-12" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    <a href="{{ asset('Assets/img/01.jpg') }}" data-lightbox="event-12" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-lg-3">
                                             <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="img/event-6.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-6.jpg') }}" alt="">
                                                 <div class="event-overlay d-flex flex-column p-4">
                                                     <h4 class="me-auto">Cocktail</h4>
-                                                    <a href="img/01.jpg" data-lightbox="event-13" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    <a href="{{ asset('Assets/img/01.jpg') }}" data-lightbox="event-13" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -519,19 +519,19 @@
                                     <div class="row g-4">
                                         <div class="col-md-6 col-lg-3">
                                             <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="img/event-7.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-7.jpg') }}" alt="">
                                                 <div class="event-overlay d-flex flex-column p-4">
                                                     <h4 class="me-auto">Buffet</h4>
-                                                    <a href="img/01.jpg" data-lightbox="event-14" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    <a href="{{ asset('Assets/img/01.jpg') }}" data-lightbox="event-14" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-lg-3">
                                             <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="img/event-8.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-8.jpg') }}" alt="">
                                                 <div class="event-overlay d-flex flex-column p-4">
                                                     <h4 class="me-auto">Buffet</h4>
-                                                    <a href="img/01.jpg" data-lightbox="event-15" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    <a href="{{ asset('Assets/img/01.jpg') }}" data-lightbox="event-15" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -586,7 +586,7 @@
                             <div class="row g-4">
                                 <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.1s">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-01.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-01.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Paneer</h4>
@@ -598,7 +598,7 @@
                                 </div>
                                 <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.2s">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-02.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Sweet Potato</h4>
@@ -610,7 +610,7 @@
                                 </div>
                                 <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.3s">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-03.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-03.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Sabudana Tikki</h4>
@@ -622,7 +622,7 @@
                                 </div>
                                 <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.4s">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-04.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-04.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Pizza</h4>
@@ -634,7 +634,7 @@
                                 </div>
                                 <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.5s">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-05.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-05.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Bacon</h4>
@@ -646,7 +646,7 @@
                                 </div>
                                 <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.6s">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-06.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-06.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Chicken</h4>
@@ -658,7 +658,7 @@
                                 </div>
                                 <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.7s">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-07.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-07.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Blooming</h4>
@@ -670,7 +670,7 @@
                                 </div>
                                 <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.8s">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-08.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-08.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Sweet</h4>
@@ -686,7 +686,7 @@
                             <div class="row g-4">
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-01.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-01.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Argentinian</h4>
@@ -698,7 +698,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-03.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-03.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Crispy</h4>
@@ -710,7 +710,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-05.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-05.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Sabudana Tikki</h4>
@@ -722,7 +722,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-07.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-07.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Blooming</h4>
@@ -734,7 +734,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-08.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-08.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Argentinian</h4>
@@ -746,7 +746,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-03.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-03.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Lemon</h4>
@@ -758,7 +758,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-02.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Water Drink</h4>
@@ -770,7 +770,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-01.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-01.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Salty lemon</h4>
@@ -786,7 +786,7 @@
                             <div class="row g-4">
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-01.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-01.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Crispy water</h4>
@@ -798,7 +798,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-02.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Juice</h4>
@@ -810,7 +810,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-03.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-03.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Orange</h4>
@@ -822,7 +822,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-04.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-04.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Apple Juice</h4>
@@ -834,7 +834,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-05.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-05.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Banana</h4>
@@ -846,7 +846,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-06.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-06.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Sweet Water</h4>
@@ -858,7 +858,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-07.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-07.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Hot Coffee</h4>
@@ -870,7 +870,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-08.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-08.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Sweet Potato</h4>
@@ -886,7 +886,7 @@
                             <div class="row g-4">
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-06.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-06.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Sabudana Tikki</h4>
@@ -898,7 +898,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-07.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-07.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Crispy</h4>
@@ -910,7 +910,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-09.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-09.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Pizza</h4>
@@ -922,7 +922,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-02.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Bacon</h4>
@@ -934,7 +934,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-03.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-03.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Chicken</h4>
@@ -946,7 +946,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-05.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-05.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Blooming</h4>
@@ -958,7 +958,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-07.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-07.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Sweet</h4>
@@ -970,7 +970,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-09.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-09.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Argentinian</h4>
@@ -986,7 +986,7 @@
                             <div class="row g-4">
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-06.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-06.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Sabudana Tikki</h4>
@@ -998,7 +998,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-07.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-07.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Crispy</h4>
@@ -1010,7 +1010,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-09.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-09.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Pizza</h4>
@@ -1022,7 +1022,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-02.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Bacon</h4>
@@ -1034,7 +1034,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-03.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-03.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Chicken</h4>
@@ -1046,7 +1046,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-05.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-05.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Blooming</h4>
@@ -1058,7 +1058,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-07.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-07.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Sweet</h4>
@@ -1070,7 +1070,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="menu-item d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-09.jpg" alt="">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="{{ asset('Assets/img/menu-09.jpg') }}" alt="">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Argentinian</h4>
@@ -1094,7 +1094,7 @@
             <div class="container">
                 <div class="row g-0">
                     <div class="col-1">
-                        <img src="img/background-site.jpg" class="img-fluid h-100 w-100 rounded-start" style="object-fit: cover; opacity: 0.7;" alt="">
+                        <img src="{{ asset('Assets/img/background-site.jpg') }}" class="img-fluid h-100 w-100 rounded-start" style="object-fit: cover; opacity: 0.7;" alt="">
                     </div>
                     <div class="col-10">
                         <div class="border-bottom border-top border-primary bg-light py-5 px-4">
@@ -1169,7 +1169,7 @@
                         </div>
                     </div>
                     <div class="col-1">
-                        <img src="img/background-site.jpg" class="img-fluid h-100 w-100 rounded-end" style="object-fit: cover; opacity: 0.7;" alt="">
+                        <img src="{{ asset('Assets/img/background-site.jpg') }}" class="img-fluid h-100 w-100 rounded-end" style="object-fit: cover; opacity: 0.7;" alt="">
                     </div>
                 </div>
             </div>
@@ -1187,7 +1187,7 @@
                 <div class="row g-4">
                     <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.1s">
                         <div class="team-item rounded">
-                            <img class="img-fluid rounded-top " src="img/team-1.jpg" alt="">
+                            <img class="img-fluid rounded-top " src="{{ asset('Assets/img/team-1.jpg') }}" alt="">
                             <div class="team-content text-center py-3 bg-dark rounded-bottom">
                                 <h4 class="text-primary">Henry</h4>
                                 <p class="text-white mb-0">Decoration Chef</p>
@@ -1202,7 +1202,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.3s">
                         <div class="team-item rounded">
-                            <img class="img-fluid rounded-top " src="img/team-2.jpg" alt="">
+                            <img class="img-fluid rounded-top " src="{{ asset('Assets/img/team-2.jpg') }}" alt="">
                             <div class="team-content text-center py-3 bg-dark rounded-bottom">
                                 <h4 class="text-primary">Jemes Born</h4>
                                 <p class="text-white mb-0">Executive Chef</p>
@@ -1217,7 +1217,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.5s">
                         <div class="team-item rounded">
-                            <img class="img-fluid rounded-top " src="img/team-3.jpg" alt="">
+                            <img class="img-fluid rounded-top " src="{{ asset('Assets/img/team-3.jpg') }}" alt="">
                             <div class="team-content text-center py-3 bg-dark rounded-bottom">
                                 <h4 class="text-primary">Martin Hill</h4>
                                 <p class="text-white mb-0">Kitchen Porter</p>
@@ -1232,7 +1232,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.7s">
                         <div class="team-item rounded">
-                            <img class="img-fluid rounded-top " src="img/team-4.jpg" alt="">
+                            <img class="img-fluid rounded-top " src="{{ asset('Assets/img/team-4.jpg') }}" alt="">
                             <div class="team-content text-center py-3 bg-dark rounded-bottom">
                                 <h4 class="text-primary">Adam Smith</h4>
                                 <p class="text-white mb-0">Head Chef</p>
@@ -1261,7 +1261,7 @@
                 <div class="owl-carousel owl-theme testimonial-carousel testimonial-carousel-1 mb-4 wow bounceInUp" data-wow-delay="0.1s">
                     <div class="testimonial-item rounded bg-light">
                         <div class="d-flex mb-3">
-                            <img src="img/testimonial-1.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                            <img src="{{ asset('Assets/img/testimonial-1.jpg') }}" class="img-fluid rounded-circle flex-shrink-0" alt="">
                             <div class="position-absolute" style="top: 15px; right: 20px;">
                                 <i class="fa fa-quote-right fa-2x"></i>
                             </div>
@@ -1283,7 +1283,7 @@
                     </div>
                     <div class="testimonial-item rounded bg-light">
                         <div class="d-flex mb-3">
-                            <img src="img/testimonial-2.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                            <img src="{{ asset('Assets/img/testimonial-2.jpg') }}" class="img-fluid rounded-circle flex-shrink-0" alt="">
                             <div class="position-absolute" style="top: 15px; right: 20px;">
                                 <i class="fa fa-quote-right fa-2x"></i>
                             </div>
@@ -1305,7 +1305,7 @@
                     </div>
                     <div class="testimonial-item rounded bg-light">
                         <div class="d-flex mb-3">
-                            <img src="img/testimonial-3.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                            <img src="{{ asset('Assets/img/testimonial-3.jpg') }}" class="img-fluid rounded-circle flex-shrink-0" alt="">
                             <div class="position-absolute" style="top: 15px; right: 20px;">
                                 <i class="fa fa-quote-right fa-2x"></i>
                             </div>
@@ -1327,7 +1327,7 @@
                     </div>
                     <div class="testimonial-item rounded bg-light">
                         <div class="d-flex mb-3">
-                            <img src="img/testimonial-4.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                            <img src="{{ asset('Assets/img/testimonial-4.jpg') }}" class="img-fluid rounded-circle flex-shrink-0" alt="">
                             <div class="position-absolute" style="top: 15px; right: 20px;">
                                 <i class="fa fa-quote-right fa-2x"></i>
                             </div>
@@ -1351,7 +1351,7 @@
                 <div class="owl-carousel testimonial-carousel testimonial-carousel-2 wow bounceInUp" data-wow-delay="0.3s">
                     <div class="testimonial-item rounded bg-light">
                         <div class="d-flex mb-3">
-                            <img src="img/testimonial-1.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                            <img src="{{ asset('Assets/img/testimonial-1.jpg') }}" class="img-fluid rounded-circle flex-shrink-0" alt="">
                             <div class="position-absolute" style="top: 15px; right: 20px;">
                                 <i class="fa fa-quote-right fa-2x"></i>
                             </div>
@@ -1373,7 +1373,7 @@
                     </div>
                     <div class="testimonial-item rounded bg-light">
                         <div class="d-flex mb-3">
-                            <img src="img/testimonial-2.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                            <img src="{{ asset('Assets/img/testimonial-2.jpg') }}" class="img-fluid rounded-circle flex-shrink-0" alt="">
                             <div class="position-absolute" style="top: 15px; right: 20px;">
                                 <i class="fa fa-quote-right fa-2x"></i>
                             </div>
@@ -1395,7 +1395,7 @@
                     </div>
                     <div class="testimonial-item rounded bg-light">
                         <div class="d-flex mb-3">
-                            <img src="img/testimonial-3.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                            <img src="{{ asset('Assets/img/testimonial-3.jpg') }}" class="img-fluid rounded-circle flex-shrink-0" alt="">
                             <div class="position-absolute" style="top: 15px; right: 20px;">
                                 <i class="fa fa-quote-right fa-2x"></i>
                             </div>
@@ -1417,7 +1417,7 @@
                     </div>
                     <div class="testimonial-item rounded bg-light">
                         <div class="d-flex mb-3">
-                            <img src="img/testimonial-4.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                            <img src="{{ asset('Assets/img/testimonial-4.jpg') }}" class="img-fluid rounded-circle flex-shrink-0" alt="">
                             <div class="position-absolute" style="top: 15px; right: 20px;">
                                 <i class="fa fa-quote-right fa-2x"></i>
                             </div>
@@ -1454,7 +1454,7 @@
                     <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
                         <div class="blog-item">
                             <div class="overflow-hidden rounded">
-                                <img src="img/blog-1.jpg" class="img-fluid w-100" alt="">
+                                <img src="{{ asset('Assets/img/blog-1.jpg') }}" class="img-fluid w-100" alt="">
                             </div>
                             <div class="blog-content mx-4 d-flex rounded bg-light">
                                 <div class="text-dark bg-primary rounded-start">
@@ -1470,7 +1470,7 @@
                     <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.3s">
                         <div class="blog-item">
                             <div class="overflow-hidden rounded">
-                                <img src="img/blog-2.jpg" class="img-fluid w-100" alt="">
+                                <img src="{{ asset('Assets/img/blog-2.jpg') }}" class="img-fluid w-100" alt="">
                             </div>
                             <div class="blog-content mx-4 d-flex rounded bg-light">
                                 <div class="text-dark bg-primary rounded-start">
@@ -1486,7 +1486,7 @@
                     <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.5s">
                         <div class="blog-item">
                             <div class="overflow-hidden rounded">
-                                <img src="img/blog-3.jpg" class="img-fluid w-100" alt="">
+                                <img src="{{ asset('Assets/img/blog-3.jpg') }}" class="img-fluid w-100" alt="">
                             </div>
                             <div class="blog-content mx-4 d-flex rounded bg-light">
                                 <div class="text-dark bg-primary rounded-start">
@@ -1548,22 +1548,22 @@
                             <h4 class="mb-4">Social Gallery</h4>
                             <div class="row g-2">
                                 <div class="col-4">
-                                     <img src="img/menu-01.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                     <img src="{{ asset('Assets/img/menu-01.jpg') }}" class="img-fluid rounded-circle border border-primary p-2" alt="">
                                 </div>
                                 <div class="col-4">
-                                     <img src="img/menu-02.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                     <img src="{{ asset('Assets/img/menu-02.jpg') }}" class="img-fluid rounded-circle border border-primary p-2" alt="">
                                 </div>
                                 <div class="col-4">
-                                     <img src="img/menu-03.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                     <img src="{{ asset('Assets/img/menu-03.jpg') }}" class="img-fluid rounded-circle border border-primary p-2" alt="">
                                 </div>
                                 <div class="col-4">
-                                     <img src="img/menu-04.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                     <img src="{{ asset('Assets/img/menu-04.jpg') }}" class="img-fluid rounded-circle border border-primary p-2" alt="">
                                 </div>
                                 <div class="col-4">
-                                     <img src="img/menu-05.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                     <img src="{{ asset('Assets/img/menu-05.jpg') }}" class="img-fluid rounded-circle border border-primary p-2" alt="">
                                 </div>
                                 <div class="col-4">
-                                     <img src="img/menu-06.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                     <img src="{{ asset('Assets/img/menu-06.jpg') }}" class="img-fluid rounded-circle border border-primary p-2" alt="">
                                 </div>
                             </div>
                         </div>
