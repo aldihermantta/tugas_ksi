@@ -10,7 +10,7 @@
                <h1 class="auth-title">Log in.</h1>
                <p class="auth-subtitle mb-5">Log in with your data that you entered during registration.</p>
 
-               <form class="form-body form-login" method="POST" onsubmit="return submit_form();" enctype="multipart/form-data">
+               <form class="form-body form-login xform" action="{{ route('auth.authenticate') }}" method="POST" enctype="multipart/form-data">
                     @csrf
 
                     <div class="form-group position-relative has-icon-left mb-4 validate-username">
@@ -33,36 +33,36 @@
      </div>
 
      <script>
-          function submit_form(){
-            // let data = $('.form-tambah').serialize();
-            let data = new FormData($('form.form-login')[0])
+          // function submit_form(){
+          //   // let data = $('.form-tambah').serialize();
+          //   let data = new FormData($('form.form-login')[0])
 
-            $.ajax({
-                    url: "",
-                    type: "post",
-                    processData: false,
-                    contentType: false,
-                    data: data,
-                    beforeSend: function(){
-                         clear_form_danger();
-                    },
-                    success: function(res){
+          //   $.ajax({
+          //           url: "{{ route('auth.authenticate') }}",
+          //           type: "post",
+          //           processData: false,
+          //           contentType: false,
+          //           data: data,
+          //           beforeSend: function(){
+          //                clear_form_danger();
+          //           },
+          //           success: function(res){
 
-                    },
-                    error: function(err){
-                         if(err.status == 422){
-                         Object.keys(err.responseJSON.errors).forEach(item => {
-                              err.responseJSON.errors[item].forEach(val => {
-                                   $('.validate-'+item).addClass('has-danger');
-                                   $('.validate-'+item).find('.form-control').addClass('form-control-danger');
-                                   $('.validate-'+item).find('.form-control-feedback').text(val);
-                              })
-                         })
-                         }
-                    }
-               });
+          //           },
+          //           error: function(err){
+          //                if(err.status == 422){
+          //                Object.keys(err.responseJSON.errors).forEach(item => {
+          //                     err.responseJSON.errors[item].forEach(val => {
+          //                          $('.validate-'+item).addClass('has-danger');
+          //                          $('.validate-'+item).find('.form-control').addClass('form-control-danger');
+          //                          $('.validate-'+item).find('.form-control-feedback').text(val);
+          //                     })
+          //                })
+          //                }
+          //           }
+          //      });
             
-               return false;
-          }
+          //      return false;
+          // }
      </script>
 @endsection

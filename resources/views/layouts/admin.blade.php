@@ -13,6 +13,8 @@
      <link rel="stylesheet" href="{{ asset('Assets/dist/vendors/perfect-scrollbar/perfect-scrollbar.css') }}">
      <link rel="stylesheet" href="{{ asset('Assets/dist/vendors/bootstrap-icons/bootstrap-icons.css') }}">
      <link rel="stylesheet" href="{{ asset('Assets/dist/css/app.css') }}">
+     <link href="{{ asset('Assets/dist/vendors/toastr/build/toastr.min.css') }}" rel="stylesheet">
+     <link href="{{ asset('Assets/dist/vendors/sweetalert2_new/dist/sweetalert2.min.css') }}" rel="stylesheet">
      <link rel="shortcut icon" href="{{ asset('Assets/dist/images/favicon.svg') }}" type="image/x-icon">
 </head>
 
@@ -48,8 +50,36 @@
      <script src="{{ asset('Assets/dist/vendors/apexcharts/apexcharts.js') }}"></script>
      <script src="{{ asset('Assets/dist/js/pages/dashboard.js') }}"></script>
      <script src="{{ asset('Assets/dist/js/mazer.js') }}"></script>
+     <script src="{{ asset('Assets/dist/vendors/toastr/build/toastr.min.js') }}"></script>
+     <script src="{{ asset('Assets/dist/vendors/sweetalert2_new/dist/sweetalert2.min.js') }}"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
      <script src="{{ asset('Assets/js/help.js') }}"></script>
+
+     <script>
+          $('#logout').click(function (e) { 
+               e.preventDefault();
+
+               Swal.fire({
+                    title: "Konfirmasi Logout",
+                    text: "Apakah anda yakin akan logout?",
+                    icon: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#3085d6",
+                    cancelButtonColor: "#d33",
+                    confirmButtonText: "Yes"
+               }).then((result) => {
+                    if (result.isConfirmed) {
+                         // setTimeout(function(){
+                         //      toastr.info('Mengalihkan...')
+                         // }, 1000)
+
+                         setTimeout(function(){
+                              window.location.href = "{{ route('auth.logout') }}"
+                         }, 2000)
+                    }
+               });
+          });
+     </script>
 </body>
 
 </html>

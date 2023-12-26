@@ -56,7 +56,6 @@ class AuthController extends Controller
                $request->session()->regenerate();
 
                $session = [
-                    'tahun'         => $request->tahun,
                     'username'      => $request->username,
                ];
 
@@ -65,6 +64,7 @@ class AuthController extends Controller
                     'status'    => 'success',
                     'toast'     => 'Login berhasil',
                     'resets'    => 'all',
+                    'redirect'  => route('dashboard')
                ]);
           } else {
                return response()->json([

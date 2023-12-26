@@ -17,5 +17,11 @@
                 <span>Components</span>
             </a>
         </li>
+        <li class="sidebar-item">
+            <a href="javascript:void(0)" class="sidebar-link" id="logout">
+                <i class="bi bi-stack"></i>
+                <span>Logout</span>
+            </a>
+        </li>
     </ul>
 </div>
