@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>CaterServ - Catering Services Website Template</title>
+        <title>Blog Alun Alun Yogyakarta</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -50,10 +50,10 @@
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <div class="navbar-nav mx-auto">
                             <a href="index.html" class="nav-item nav-link active">Home</a>
-                            <a href="about.html" class="nav-item nav-link">About</a>
-                            <a href="service.html" class="nav-item nav-link">Services</a>
-                            <a href="event.html" class="nav-item nav-link">Events</a>
-                            <a href="menu.html" class="nav-item nav-link">Menu</a>
+                            <a href="about.html" class="nav-item nav-link">Tentang Web Ini</a>
+                            {{-- <a href="service.html" class="nav-item nav-link">Services</a> --}}
+                            <a href="event.html" class="nav-item nav-link">Informasi Alun - Alun</a>
+                            {{-- <a href="menu.html" class="nav-item nav-link">Menu</a>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                 <div class="dropdown-menu bg-light">
@@ -63,7 +63,7 @@
                                     <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                                     <a href="404.html" class="dropdown-item">404 Page</a>
                                 </div>
-                            </div>
+                            </div> --}}
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
                         </div>
                         {{-- <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button> --}}
@@ -100,13 +100,13 @@
             <div class="container">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-7 col-md-12">
-                        <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-4 animated bounceInDown">Welcome to </small>
+                        <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-4 animated bounceInDown">Selamat Datang Di Blog Kami </small>
                         <h1 class="display-1 mb-4 animated bounceInDown">Alun <span class="text-primary">Alun</span>Yogyakarta</h1>
-                        <a href="javascript:void(0)" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated bounceInLeft">Team</a>
-                        <a href="javascript:void(0)" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animated bounceInUp">Know More</a>
+                        <a href="javascript:void(0)" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated bounceInLeft">Team Penulis Kami</a>
+                        <a href="javascript:void(0)" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animated bounceInUp">Lihat Informasi</a>
                     </div>
                     <div class="col-lg-5 col-md-12">
-                        <img src="{{ asset('Assets/img/hero.png') }}" class="img-fluid rounded animated zoomIn" alt="">
+                        <img src="{{ asset('Assets/img/gambar_home.png') }}" class="img-fluid rounded animated zoomIn" alt="">
                     </div>
                 </div>
             </div>
