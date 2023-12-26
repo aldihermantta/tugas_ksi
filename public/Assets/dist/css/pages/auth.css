@@ -8,17 +8,17 @@ body {
 }
 #auth #auth-right {
   height: 100%;
-  background: url(../../images/bg/4853433.jpg), linear-gradient(90deg, #2d499d, #3f5491);
+  /* background: url(../../images/bg/4853433.jpg), linear-gradient(90deg, #2d499d, #3f5491); */
 }
 #auth #auth-left {
   padding: 5rem 8rem;
 }
 #auth #auth-left .auth-title {
-  font-size: 4rem;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 #auth #auth-left .auth-subtitle {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   line-height: 2.5rem;
   color: #a8aebb;
 }
