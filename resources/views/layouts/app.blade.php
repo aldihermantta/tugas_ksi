@@ -42,7 +42,7 @@
             <div class="container">
                 <nav class="navbar navbar-light navbar-expand-lg py-4">
                     <a href="index.html" class="navbar-brand">
-                        <h1 class="text-primary fw-bold mb-0">Cater<span class="text-dark">Serv</span> </h1>
+                        <h1 class="text-primary fw-bold mb-0">Alun <span class="text-dark">Alun</span>Yogyakarta </h1>
                     </a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
@@ -66,8 +66,8 @@
                             </div>
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
                         </div>
-                        <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
-                        <a href="" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Book Now</a>
+                        {{-- <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button> --}}
+                        {{-- <a href="" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Book Now</a> --}}
                     </div>
                 </nav>
             </div>
@@ -76,7 +76,7 @@
 
 
         <!-- Modal Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        {{-- <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content rounded-0">
                     <div class="modal-header">
@@ -91,7 +91,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- Modal Search End -->
 
 
@@ -100,10 +100,10 @@
             <div class="container">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-7 col-md-12">
-                        <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-4 animated bounceInDown">Welcome to CaterServ</small>
-                        <h1 class="display-1 mb-4 animated bounceInDown">Book <span class="text-primary">Cater</span>Serv For Your Dream Event</h1>
-                        <a href="" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated bounceInLeft">Book Now</a>
-                        <a href="" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animated bounceInLeft">Know More</a>
+                        <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-4 animated bounceInDown">Welcome to </small>
+                        <h1 class="display-1 mb-4 animated bounceInDown">Alun <span class="text-primary">Alun</span>Yogyakarta</h1>
+                        <a href="javascript:void(0)" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated bounceInLeft">Team</a>
+                        <a href="javascript:void(0)" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animated bounceInUp">Know More</a>
                     </div>
                     <div class="col-lg-5 col-md-12">
                         <img src="{{ asset('Assets/img/hero.png') }}" class="img-fluid rounded animated zoomIn" alt="">
