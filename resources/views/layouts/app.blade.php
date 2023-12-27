@@ -443,7 +443,7 @@
 
 
         <!-- Menu Start -->
-        <div class="container-fluid menu bg-light py-6 my-6">
+        {{-- <div class="container-fluid menu bg-light py-6 my-6">
             <div class="container">
                 <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
                     <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Our Menu</small>
@@ -981,12 +981,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- Menu End -->
 
 
         <!-- Book Us Start -->
-        <div class="container-fluid contact py-6 wow bounceInUp" data-wow-delay="0.1s">
+        {{-- <div class="container-fluid contact py-6 wow bounceInUp" data-wow-delay="0.1s">
             <div class="container">
                 <div class="row g-0">
                     <div class="col-1">
@@ -1069,24 +1069,86 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- Book Us End -->
+
+
+        <!-- Blog Start -->
+        <div class="container-fluid blog py-6">
+            <div class="container">
+                <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Artikel</small>
+                    <h1 class="display-5 mb-5">Informasi Alun - Alun</h1>
+                </div>
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
+                        <div class="blog-item">
+                            <div class="overflow-hidden rounded">
+                                <img src="{{ asset('Assets/img/blog-1.jpg') }}" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="blog-content mx-4 d-flex rounded bg-light">
+                                <div class="text-dark bg-primary rounded-start">
+                                    <div class="h-100 p-3 d-flex flex-column justify-content-center text-center">
+                                        <p class="fw-bold mb-0">16</p>
+                                        <p class="fw-bold mb-0">Sep</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="h5 lh-base my-auto h-100 p-3">How to get more test in your food from</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.3s">
+                        <div class="blog-item">
+                            <div class="overflow-hidden rounded">
+                                <img src="{{ asset('Assets/img/blog-2.jpg') }}" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="blog-content mx-4 d-flex rounded bg-light">
+                                <div class="text-dark bg-primary rounded-start">
+                                    <div class="h-100 p-3 d-flex flex-column justify-content-center text-center">
+                                        <p class="fw-bold mb-0">16</p>
+                                        <p class="fw-bold mb-0">Sep</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="h5 lh-base my-auto h-100 p-3">How to get more test in your food from</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.5s">
+                        <div class="blog-item">
+                            <div class="overflow-hidden rounded">
+                                <img src="{{ asset('Assets/img/blog-3.jpg') }}" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="blog-content mx-4 d-flex rounded bg-light">
+                                <div class="text-dark bg-primary rounded-start">
+                                    <div class="h-100 p-3 d-flex flex-column justify-content-center text-center">
+                                        <p class="fw-bold mb-0">16</p>
+                                        <p class="fw-bold mb-0">Sep</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="h5 lh-base my-auto h-100 p-3">How to get more test in your food from</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog End -->
 
         
         <!-- Team Start -->
         <div class="container-fluid team py-6">
             <div class="container">
                 <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
-                    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Our Team</small>
-                    <h1 class="display-5 mb-5">We have experienced chef Team</h1>
+                    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Team Penulis Kami</small>
+                    <h1 class="display-5 mb-5">Lokasi Foto Bersama</h1>
                 </div>
-                <div class="row g-4">
-                    <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.1s">
+                <div class="row g-4 d-flex justify-content-center">
+                    <div class="col-lg-5 col-md-6 wow bounceInUp" data-wow-delay="0.1s">
                         <div class="team-item rounded">
-                            <img class="img-fluid rounded-top " src="{{ asset('Assets/img/team-1.jpg') }}" alt="">
+                            <img class="img-fluid rounded-top " src="{{ asset('Assets/img/team-tugas-1.png') }}" alt="">
                             <div class="team-content text-center py-3 bg-dark rounded-bottom">
-                                <h4 class="text-primary">Henry</h4>
-                                <p class="text-white mb-0">Decoration Chef</p>
+                                <h4 class="text-primary">Lokasi</h4>
+                                <p class="text-white mb-0">Alun - Alun Kidul</p>
                             </div>
                             <div class="team-icon d-flex flex-column justify-content-center m-4">
                                 <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fas fa-share-alt"></i></a>
@@ -1096,42 +1158,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.3s">
+                    <div class="col-lg-5 col-md-6 wow bounceInUp" data-wow-delay="0.3s">
                         <div class="team-item rounded">
-                            <img class="img-fluid rounded-top " src="{{ asset('Assets/img/team-2.jpg') }}" alt="">
+                            <img class="img-fluid rounded-top " src="{{ asset('Assets/img/team-tugas-2.png') }}" alt="">
                             <div class="team-content text-center py-3 bg-dark rounded-bottom">
-                                <h4 class="text-primary">Jemes Born</h4>
-                                <p class="text-white mb-0">Executive Chef</p>
-                            </div>
-                            <div class="team-icon d-flex flex-column justify-content-center m-4">
-                                <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fas fa-share-alt"></i></a>
-                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.5s">
-                        <div class="team-item rounded">
-                            <img class="img-fluid rounded-top " src="{{ asset('Assets/img/team-3.jpg') }}" alt="">
-                            <div class="team-content text-center py-3 bg-dark rounded-bottom">
-                                <h4 class="text-primary">Martin Hill</h4>
-                                <p class="text-white mb-0">Kitchen Porter</p>
-                            </div>
-                            <div class="team-icon d-flex flex-column justify-content-center m-4">
-                                <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fas fa-share-alt"></i></a>
-                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.7s">
-                        <div class="team-item rounded">
-                            <img class="img-fluid rounded-top " src="{{ asset('Assets/img/team-4.jpg') }}" alt="">
-                            <div class="team-content text-center py-3 bg-dark rounded-bottom">
-                                <h4 class="text-primary">Adam Smith</h4>
-                                <p class="text-white mb-0">Head Chef</p>
+                                <h4 class="text-primary">Lokasi</h4>
+                                <p class="text-white mb-0">Alun - Alun Kidul</p>
                             </div>
                             <div class="team-icon d-flex flex-column justify-content-center m-4">
                                 <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fas fa-share-alt"></i></a>
@@ -1148,7 +1180,7 @@
 
 
         <!-- Testimonial Start -->
-        <div class="container-fluid py-6">
+        {{-- <div class="container-fluid py-6">
             <div class="container">
                 <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
                     <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Testimonial</small>
@@ -1335,71 +1367,8 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- Testimonial End -->
-
-
-        <!-- Blog Start -->
-        <div class="container-fluid blog py-6">
-            <div class="container">
-                <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
-                    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Our Blog</small>
-                    <h1 class="display-5 mb-5">Be First Who Read News</h1>
-                </div>
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
-                        <div class="blog-item">
-                            <div class="overflow-hidden rounded">
-                                <img src="{{ asset('Assets/img/blog-1.jpg') }}" class="img-fluid w-100" alt="">
-                            </div>
-                            <div class="blog-content mx-4 d-flex rounded bg-light">
-                                <div class="text-dark bg-primary rounded-start">
-                                    <div class="h-100 p-3 d-flex flex-column justify-content-center text-center">
-                                        <p class="fw-bold mb-0">16</p>
-                                        <p class="fw-bold mb-0">Sep</p>
-                                    </div>
-                                </div>
-                                <a href="#" class="h5 lh-base my-auto h-100 p-3">How to get more test in your food from</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.3s">
-                        <div class="blog-item">
-                            <div class="overflow-hidden rounded">
-                                <img src="{{ asset('Assets/img/blog-2.jpg') }}" class="img-fluid w-100" alt="">
-                            </div>
-                            <div class="blog-content mx-4 d-flex rounded bg-light">
-                                <div class="text-dark bg-primary rounded-start">
-                                    <div class="h-100 p-3 d-flex flex-column justify-content-center text-center">
-                                        <p class="fw-bold mb-0">16</p>
-                                        <p class="fw-bold mb-0">Sep</p>
-                                    </div>
-                                </div>
-                                <a href="#" class="h5 lh-base my-auto h-100 p-3">How to get more test in your food from</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.5s">
-                        <div class="blog-item">
-                            <div class="overflow-hidden rounded">
-                                <img src="{{ asset('Assets/img/blog-3.jpg') }}" class="img-fluid w-100" alt="">
-                            </div>
-                            <div class="blog-content mx-4 d-flex rounded bg-light">
-                                <div class="text-dark bg-primary rounded-start">
-                                    <div class="h-100 p-3 d-flex flex-column justify-content-center text-center">
-                                        <p class="fw-bold mb-0">16</p>
-                                        <p class="fw-bold mb-0">Sep</p>
-                                    </div>
-                                </div>
-                                <a href="#" class="h5 lh-base my-auto h-100 p-3">How to get more test in your food from</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Blog End -->
-
 
         <!-- Footer Start -->
         <div class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp" data-wow-delay="0.1s">
