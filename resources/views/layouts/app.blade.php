@@ -100,7 +100,7 @@
             <div class="container">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-7 col-md-12">
-                        <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-4 animated bounceInDown">Selamat Datang Di Blog Kami </small>
+                        <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-4 animated bounceInDown">Selamat Datang Di Web </small>
                         <h1 class="display-1 mb-4 animated bounceInDown">Alun <span class="text-primary">Alun</span>Yogyakarta</h1>
                         <a href="javascript:void(0)" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated bounceInLeft">Team Penulis Kami</a>
                         <a href="javascript:void(0)" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animated bounceInUp">Lihat Informasi</a>
@@ -119,29 +119,27 @@
             <div class="container">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
-                        <img src="{{ asset('Assets/img/about.jpg') }}" class="img-fluid rounded" alt="">
+                        <img src="{{ asset('Assets/img/about_alun_alun.png') }}" class="img-fluid rounded" alt="">
                     </div>
                     <div class="col-lg-7 wow bounceInUp" data-wow-delay="0.3s">
-                        <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">About Us</small>
-                        <h1 class="display-5 mb-4">Trusted By 200 + satisfied clients</h1>
-                        <p class="mb-4">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore eit esdioilore magna aliqua. Ut enim ad minim veniam, 
-                            quis nostrud exercitation ullaemco laboeeiris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                            dolor iesdein reprehendeerit in voluptate velit esse cillum dolore.</p>
+                        <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Tentang Web Ini</small>
+                        <h1 class="display-5 mb-4">Alun Alun Yogyakarta</h1>
+                        <p class="mb-4">Web ini berisi sistem informasi tentang Alun-Alun Yogyakarta.Dari sistem informasi ini diharapkan dapat membantu wisatawan dan penduduk setempat untuk mendapatkan informasi yang berguna, seperti jadwal acara dan fasilitas yang tersedia, untuk memudahkan perencanaan kunjungan atau kegiatan di Alun-alun Yogyakarta</p>
                         <div class="row g-4 text-dark mb-5">
                             <div class="col-sm-6">
-                                <i class="fas fa-share text-primary me-2"></i>Fresh and Fast food Delivery
+                                <i class="fas fa-share text-primary me-2"></i>Aktivitas Alkid Pagi
                             </div>
                             <div class="col-sm-6">
-                                <i class="fas fa-share text-primary me-2"></i>24/7 Customer Support
+                                <i class="fas fa-share text-primary me-2"></i>Aktivitas Alkid Malam
                             </div>
                             <div class="col-sm-6">
-                                <i class="fas fa-share text-primary me-2"></i>Easy Customization Options
+                                <i class="fas fa-share text-primary me-2"></i>Informasi Parkir Motor
                             </div>
                             <div class="col-sm-6">
-                                <i class="fas fa-share text-primary me-2"></i>Delicious Deals for Delicious Meals
+                                <i class="fas fa-share text-primary me-2"></i>Informasi Parkir Mobil
                             </div>
                         </div>
-                        <a href="" class="btn btn-primary py-3 px-5 rounded-pill">About Us<i class="fas fa-arrow-right ps-2"></i></a>
+                        <a href="" class="btn btn-primary py-3 px-5 rounded-pill">Lihat Selebihnya<i class="fas fa-arrow-right ps-2"></i></a>
                     </div>
                 </div>
             </div>
