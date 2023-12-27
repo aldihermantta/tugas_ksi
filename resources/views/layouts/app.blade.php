@@ -148,7 +148,7 @@
 
 
         <!-- Fact Start-->
-        <div class="container-fluid faqt py-6">
+        {{-- <div class="container-fluid faqt py-6">
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-lg-7">
@@ -185,9 +185,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- Modal Video -->
-        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        {{-- <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content rounded-0">
                     <div class="modal-header">
@@ -203,12 +203,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- Fact End -->
 
 
         <!-- Service Start -->
-        <div class="container-fluid service py-6">
+        {{-- <div class="container-fluid service py-6">
             <div class="container">
                 <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
                     <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Our Services</small>
@@ -313,7 +313,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- Service End -->
 
 
@@ -321,34 +321,19 @@
         <div class="container-fluid event py-6">
             <div class="container">
                 <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
-                    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Latest Events</small>
-                    <h1 class="display-5 mb-5">Our Social & Professional Events Gallery</h1>
+                    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Album Alun - Alun</small>
+                    <h1 class="display-5 mb-5">Berikut ini foto-foto yang kami ambil di Alun-alun Yogyakarta pada malam hari</h1>
                 </div>
                 <div class="tab-class text-center">
                     <ul class="nav nav-pills d-inline-flex justify-content-center mb-5 wow bounceInUp" data-wow-delay="0.1s">
                         <li class="nav-item p-2">
                             <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-1">
-                                <span class="text-dark" style="width: 150px;">All Events</span>
+                                <span class="text-dark" style="width: 150px;">Alun - Alun Kidul</span>
                             </a>
                         </li>
                         <li class="nav-item p-2">
                             <a class="d-flex py-2 mx-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-2">
-                                <span class="text-dark" style="width: 150px;">Wedding</span>
-                            </a>
-                        </li>
-                        <li class="nav-item p-2">
-                            <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-3">
-                                <span class="text-dark" style="width: 150px;">Corporate</span>
-                            </a>
-                        </li>
-                        <li class="nav-item p-2">
-                            <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-4">
-                                <span class="text-dark" style="width: 150px;">Cocktail</span>
-                            </a>
-                        </li>
-                        <li class="nav-item p-2">
-                            <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-5">
-                                <span class="text-dark" style="width: 150px;">Buffet</span>
+                                <span class="text-dark" style="width: 150px;">Alun - Alun Utara</span>
                             </a>
                         </li>
                     </ul>
@@ -357,75 +342,57 @@
                             <div class="row g-4">
                                 <div class="col-lg-12">
                                     <div class="row g-4">
-                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s">
+                                        <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
                                             <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-1.jpg') }}" alt="">
+                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/alkid-1.png') }}" alt="">
                                                 <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Wedding</h4>
-                                                    <a href="{{ asset('Assets/img/event-1.jpg') }}" data-lightbox="event-1" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    <h4 class="me-auto">Tempat Mewarnai</h4>
+                                                    <a href="{{ asset('Assets/img/alkid-1.png') }}" data-lightbox="alkid-1" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.3s">
+                                        <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.3s">
                                             <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-2.jpg') }}" alt="">
+                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/alkid-2.png') }}" alt="">
                                                 <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Corporate</h4>
-                                                    <a href="{{ asset('Assets/img/event-2.jpg') }}" data-lightbox="event-2" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    <h4 class="me-auto">Kuliner Malam</h4>
+                                                    <a href="{{ asset('Assets/img/alkid-2.png') }}" data-lightbox="alkid-2" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.5s">
+                                        <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.5s">
                                             <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-3.jpg') }}" alt="">
+                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/alkid-3.png') }}" alt="">
                                                 <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Wedding</h4>
-                                                    <a href="{{ asset('Assets/img/event-3.jpg') }}" data-lightbox="event-3" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    <h4 class="me-auto">Orang Mewarnai</h4>
+                                                    <a href="{{ asset('Assets/img/alkid-3.png') }}" data-lightbox="alkid-3" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
+                                        <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.7s">
                                             <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-4.jpg') }}" alt="">
+                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/alkid-4.png') }}" alt="">
                                                 <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Buffet</h4>
-                                                    <a href="{{ asset('Assets/img/event-4.jpg') }}" data-lightbox="event-4" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    <h4 class="me-auto">Mobil Goes</h4>
+                                                    <a href="{{ asset('Assets/img/alkid-4.png') }}" data-lightbox="alkid-4" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s">
+                                        <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
                                             <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-5.jpg') }}" alt="">
+                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/alkid-5.png') }}" alt="">
                                                 <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Cocktail</h4>
-                                                    <a href="{{ asset('Assets/img/event-5.jpg') }}" data-lightbox="event-5" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    <h4 class="me-auto">Masangin</h4>
+                                                    <a href="{{ asset('Assets/img/alkid-5.png') }}" data-lightbox="alkid-5" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.3s">
+                                        <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
                                             <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-6.jpg') }}" alt="">
+                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/about_alun_alun.png') }}" alt="">
                                                 <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Wedding</h4>
-                                                    <a href="{{ asset('Assets/img/event-6.jpg') }}" data-lightbox="event-6" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.5s">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-7.jpg') }}" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Buffet</h4>
-                                                    <a href="{{ asset('Assets/img/event-7.jpg') }}" data-lightbox="event-7" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-8.jpg') }}" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Corporate</h4>
-                                                    <a href="{{ asset('Assets/img/event-8.jpg') }}" data-lightbox="event-17" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    <h4 class="me-auto">Suasana Alkid</h4>
+                                                    <a href="{{ asset('Assets/img/about_alun_alun.png') }}" data-lightbox="about_alun_alun" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -437,99 +404,30 @@
                             <div class="row g-4">
                                 <div class="col-lg-12">
                                     <div class="row g-4">
-                                        <div class="col-md-6 col-lg-3">
+                                        <div class="col-md-6 col-lg-4">
                                             <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-1.jpg') }}" alt="">
+                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/altar-1.png') }}" alt="">
                                                 <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Wedding</h4>
-                                                    <a href="{{ asset('Assets/img/01.jpg') }}" data-lightbox="event-8" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    <h4 class="me-auto">Petunjuk Jalan</h4>
+                                                    <a href="{{ asset('Assets/img/altar-1.png') }}" data-lightbox="altar-1" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-lg-3">
+                                        <div class="col-md-6 col-lg-4">
                                             <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-2.jpg') }}" alt="">
+                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/altar-2.png') }}" alt="">
                                                 <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Wedding</h4>
-                                                    <a href="{{ asset('Assets/img/01.jpg') }}" data-lightbox="event-9" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    <h4 class="me-auto">Lapangan Altar</h4>
+                                                    <a href="{{ asset('Assets/img/altar-2.png') }}" data-lightbox="altar-2" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab-3" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <div class="col-lg-12">
-                                    <div class="row g-4">
-                                        <div class="col-md-6 col-lg-3">
+                                        <div class="col-md-6 col-lg-4">
                                             <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-3.jpg') }}" alt="">
+                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/altar-3.png') }}" alt="">
                                                 <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Corporate</h4>
-                                                    <a href="{{ asset('Assets/img/01.jpg') }}" data-lightbox="event-10" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-3">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-4.jpg') }}" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Corporate</h4>
-                                                    <a href="{{ asset('Assets/img/01.jpg') }}" data-lightbox="event-11" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab-4" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <div class="col-lg-12">
-                                    <div class="row g-4">
-                                        <div class="col-md-6 col-lg-3">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-5.jpg') }}" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Cocktail</h4>
-                                                    <a href="{{ asset('Assets/img/01.jpg') }}" data-lightbox="event-12" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-3">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-6.jpg') }}" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Cocktail</h4>
-                                                    <a href="{{ asset('Assets/img/01.jpg') }}" data-lightbox="event-13" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab-5" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <div class="col-lg-12">
-                                    <div class="row g-4">
-                                        <div class="col-md-6 col-lg-3">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-7.jpg') }}" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Buffet</h4>
-                                                    <a href="{{ asset('Assets/img/01.jpg') }}" data-lightbox="event-14" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-3">
-                                            <div class="event-img position-relative">
-                                                <img class="img-fluid rounded w-100" src="{{ asset('Assets/img/event-8.jpg') }}" alt="">
-                                                <div class="event-overlay d-flex flex-column p-4">
-                                                    <h4 class="me-auto">Buffet</h4>
-                                                    <a href="{{ asset('Assets/img/01.jpg') }}" data-lightbox="event-15" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    <h4 class="me-auto">Suasana Sekitar</h4>
+                                                    <a href="{{ asset('Assets/img/altar-3.png') }}" data-lightbox="altar-3" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                                 </div>
                                             </div>
                                         </div>
