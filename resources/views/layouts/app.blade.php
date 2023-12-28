@@ -1410,25 +1410,25 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-item">
-                            <h4 class="mb-4">Social Gallery</h4>
+                            <h4 class="mb-4">Gambar Lainnya</h4>
                             <div class="row g-2">
                                 <div class="col-4">
-                                     <img src="{{ asset('Assets/img/menu-01.jpg') }}" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                    <img src="{{ asset('Assets/img/lingkaran-1.png') }}" class="img-fluid rounded-circle border border-primary p-2" alt="">
                                 </div>
                                 <div class="col-4">
-                                     <img src="{{ asset('Assets/img/menu-02.jpg') }}" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                    <img src="{{ asset('Assets/img/lingkaran-2.png') }}" class="img-fluid rounded-circle border border-primary p-2" alt="">
                                 </div>
                                 <div class="col-4">
-                                     <img src="{{ asset('Assets/img/menu-03.jpg') }}" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                    <img src="{{ asset('Assets/img/lingkaran-3.png') }}" class="img-fluid rounded-circle border border-primary p-2" alt="">
                                 </div>
                                 <div class="col-4">
-                                     <img src="{{ asset('Assets/img/menu-04.jpg') }}" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                    <img src="{{ asset('Assets/img/lingkaran-4.png') }}" class="img-fluid rounded-circle border border-primary p-2" alt="">
                                 </div>
                                 <div class="col-4">
-                                     <img src="{{ asset('Assets/img/menu-05.jpg') }}" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                    <img src="{{ asset('Assets/img/lingkaran-5.png') }}" class="img-fluid rounded-circle border border-primary p-2" alt="">
                                 </div>
                                 <div class="col-4">
-                                     <img src="{{ asset('Assets/img/menu-06.jpg') }}" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                    <img src="{{ asset('Assets/img/lingkaran-6.png') }}" class="img-fluid rounded-circle border border-primary p-2" alt="">
                                 </div>
                             </div>
                         </div>
@@ -1443,15 +1443,15 @@
         <div class="container-fluid copyright bg-dark py-4">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
+                    <div class="col-md-12 text-center d-flex justify-content-center text-md-start mb-3 mb-md-0">
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Alun Alun</a>, Yogyakarta.</span>
                     </div>
-                    <div class="col-md-6 my-auto text-center text-md-end text-white">
+                    {{-- <div class="col-md-6 my-auto text-center text-md-end text-white">
                         <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
                         <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
                         <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
                         Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
