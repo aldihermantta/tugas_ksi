@@ -106,7 +106,7 @@
                         <a href="javascript:void(0)" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 mb-3 animated bounceInUp">Lihat Informasi</a>
                     </div>
                     <div class="col-lg-5 col-md-12">
-                        <img src="{{ asset('Assets/img/gambar_home.png') }}" class="img-fluid rounded animated zoomIn" alt="">
+                        <img src="{{ asset('Assets/img/home_image.png') }}" class="img-fluid rounded animated zoomIn" alt="">
                     </div>
                 </div>
             </div>
