@@ -102,8 +102,8 @@
                     <div class="col-lg-7 col-md-12">
                         <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-4 animated bounceInDown">Selamat Datang Di Web </small>
                         <h1 class="display-1 mb-4 animated bounceInDown">Alun <span class="text-primary">Alun</span>Yogyakarta</h1>
-                        <a href="javascript:void(0)" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated bounceInLeft">Team Penulis Kami</a>
-                        <a href="javascript:void(0)" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animated bounceInUp">Lihat Informasi</a>
+                        <a href="javascript:void(0)" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 mb-3 animated bounceInLeft">Team Penulis Kami</a>
+                        <a href="javascript:void(0)" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 mb-3 animated bounceInUp">Lihat Informasi</a>
                     </div>
                     <div class="col-lg-5 col-md-12">
                         <img src="{{ asset('Assets/img/gambar_home.png') }}" class="img-fluid rounded animated zoomIn" alt="">
@@ -321,19 +321,19 @@
         <div class="container-fluid event py-6">
             <div class="container">
                 <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
-                    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Album Alun - Alun</small>
-                    <h1 class="display-5 mb-5">Berikut ini foto-foto yang kami ambil di Alun-alun Yogyakarta pada malam hari</h1>
+                    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Album Alun Alun</small>
+                    <h1 class="display-5 mb-5">Berikut Ini Sekumpulan Foto Yang Kami Ambil Di Alun Alun Yogyakarta Pada Malam Hari</h1>
                 </div>
                 <div class="tab-class text-center">
                     <ul class="nav nav-pills d-inline-flex justify-content-center mb-5 wow bounceInUp" data-wow-delay="0.1s">
                         <li class="nav-item p-2">
                             <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-1">
-                                <span class="text-dark" style="width: 150px;">Alun - Alun Kidul</span>
+                                <span class="text-dark" style="width: 250px;">ALUN - ALUN KIDUL</span>
                             </a>
                         </li>
                         <li class="nav-item p-2">
                             <a class="d-flex py-2 mx-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-2">
-                                <span class="text-dark" style="width: 150px;">Alun - Alun Utara</span>
+                                <span class="text-dark" style="width: 250px;">ALUN - ALUN UTARA</span>
                             </a>
                         </li>
                     </ul>
@@ -1078,7 +1078,7 @@
             <div class="container">
                 <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
                     <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Artikel</small>
-                    <h1 class="display-5 mb-5">Informasi Alun - Alun</h1>
+                    <h1 class="display-5 mb-5">Informasi Alun Alun</h1>
                 </div>
                 <div class="row gx-4 justify-content-center">
                     <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
@@ -1147,30 +1147,30 @@
                         <div class="team-item rounded">
                             <img class="img-fluid rounded-top " src="{{ asset('Assets/img/team-tugas-1.png') }}" alt="">
                             <div class="team-content text-center py-3 bg-dark rounded-bottom">
-                                <h4 class="text-primary">Lokasi</h4>
-                                <p class="text-white mb-0">Alun - Alun Kidul</p>
+                                <h4 class="text-primary">LOKASI</h4>
+                                <p class="text-white mb-0">ALUN - ALUN KIDUL</p>
                             </div>
-                            <div class="team-icon d-flex flex-column justify-content-center m-4">
+                            {{-- <div class="team-icon d-flex flex-column justify-content-center m-4">
                                 <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fas fa-share-alt"></i></a>
                                 <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-twitter"></i></a>
                                 <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                     <div class="col-lg-5 col-md-6 wow bounceInUp" data-wow-delay="0.3s">
                         <div class="team-item rounded">
                             <img class="img-fluid rounded-top " src="{{ asset('Assets/img/team-tugas-2.png') }}" alt="">
                             <div class="team-content text-center py-3 bg-dark rounded-bottom">
-                                <h4 class="text-primary">Lokasi</h4>
-                                <p class="text-white mb-0">Alun - Alun Kidul</p>
+                                <h4 class="text-primary">LOKASI</h4>
+                                <p class="text-white mb-0">ALUN - ALUN KIDUL</p>
                             </div>
-                            <div class="team-icon d-flex flex-column justify-content-center m-4">
+                            {{-- <div class="team-icon d-flex flex-column justify-content-center m-4">
                                 <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fas fa-share-alt"></i></a>
                                 <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-twitter"></i></a>
                                 <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -1376,8 +1376,8 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-item">
-                            <h1 class="text-primary">Cater<span class="text-dark">Serv</span></h1>
-                            <p class="lh-lg mb-4">There cursus massa at urnaaculis estieSed aliquamellus vitae ultrs condmentum leo massamollis its estiegittis miristum.</p>
+                            <h1 class="text-primary">Alun <span class="text-dark">Alun</span> <br> Yogyakarta</h1>
+                            <p class="lh-lg mb-4">Alun-alun ini adalah tempat yang sangat penting dalam kehidupan sehari-hari dan budaya Yogyakarta.</p>
                             <div class="footer-icon d-flex">
                                 <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-twitter"></i></a>
