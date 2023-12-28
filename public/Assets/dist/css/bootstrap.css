@@ -5172,6 +5172,12 @@ fieldset:disabled .btn {
     margin-bottom: 0;
 }
 
+
+.card-text {
+    color: #9a9a9a !important;
+}
+
+
 .card-text:last-child {
     margin-bottom: 0;
 }
