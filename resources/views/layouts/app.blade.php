@@ -64,7 +64,7 @@
                                     <a href="404.html" class="dropdown-item">404 Page</a>
                                 </div>
                             </div> --}}
-                            <a href="contact.html" class="nav-item nav-link">Kontak</a>
+                            {{-- <a href="contact.html" class="nav-item nav-link">Kontak</a> --}}
                         </div>
                         {{-- <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button> --}}
                         {{-- <a href="" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Book Now</a> --}}
