@@ -28,9 +28,14 @@ use App\Http\Controllers\Dashboard\Artikel_Dashboard\DashboardArtikelController;
     //     return view('layouts.app');
     // });
 
-    Route::get('/', [HomeController::class, 'index']);
+    Route::get('/', [HomeController::class, 'index'])->name('home-alun-alun');
 
-    Route::resource('/artikels', ArtikelController::class);
+    Route::resource('/infromasi-alun-alun', ArtikelController::class, [
+        'names' => [
+            'index' => 'halaman-informasi',
+            'show' => 'detail-informasi'
+        ]
+    ]);
 
 
 // KHUSUS DASHBOARD

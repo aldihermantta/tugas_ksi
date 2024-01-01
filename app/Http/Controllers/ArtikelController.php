@@ -15,7 +15,7 @@ class ArtikelController extends Controller
     public function index()
     {
         $artikel = Artikel::all();
-        return view('dashboard.artikel.index', compact('artikel'));
+        return view('landing_page.informasi.index', compact('artikel'));
     }
 
     /**
@@ -48,7 +48,7 @@ class ArtikelController extends Controller
     public function show($slug)
     {
         $artikel = Artikel::where('slug', $slug)->first();
-        return view('users.artikel.show', compact('artikel'));
+        return view('landing_page.informasi.show', compact('artikel'));
     }
 
     /**
