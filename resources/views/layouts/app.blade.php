@@ -50,7 +50,7 @@
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <div class="navbar-nav mx-auto">
                             <a href="index.html" class="nav-item nav-link active">Home</a>
-                            <a href="about.html" class="nav-item nav-link">Tentang Web Ini</a>
+                            <a href="#about" class="nav-item nav-link">Tentang Web Ini</a>
                             {{-- <a href="service.html" class="nav-item nav-link">Services</a> --}}
                             <a href="event.html" class="nav-item nav-link">Informasi Alun - Alun</a>
                             {{-- <a href="menu.html" class="nav-item nav-link">Menu</a>
@@ -115,14 +115,14 @@
 
 
         <!-- About Satrt -->
-        <div class="container-fluid py-6">
+        <div class="container-fluid py-6" id="about">
             <div class="container">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
                         <img src="{{ asset('Assets/img/about_alun_alun.png') }}" class="img-fluid rounded" alt="">
                     </div>
                     <div class="col-lg-7 wow bounceInUp" data-wow-delay="0.3s">
-                        <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Tentang Web Ini</small>
+                        <small  class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Tentang Web Ini</small>
                         <h1 class="display-5 mb-4">Alun Alun Yogyakarta</h1>
                         <p class="mb-4">Web ini berisi sistem informasi tentang Alun-Alun Yogyakarta.Dari sistem informasi ini diharapkan dapat membantu wisatawan dan penduduk setempat untuk mendapatkan informasi yang berguna, seperti jadwal acara dan fasilitas yang tersedia, untuk memudahkan perencanaan kunjungan atau kegiatan di Alun-alun Yogyakarta</p>
                         <div class="row g-4 text-dark mb-5">
@@ -1153,7 +1153,7 @@
         </div>
         <!-- Blog End -->
 
-        
+
         <!-- Team Start -->
         <div class="container-fluid team py-6">
             <div class="container">
@@ -1478,9 +1478,9 @@
 
 
         <!-- Back to Top -->
-        <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+        <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
 
-        
+
         <!-- JavaScript Libraries -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
