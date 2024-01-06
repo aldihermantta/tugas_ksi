@@ -15,7 +15,7 @@ class HomeController extends Controller
     public function index()
     {
         $artikel = Artikel::all();
-        return view('layouts.app', compact('artikel'));
+        return view('landing_page.index', compact('artikel'));
     }
 
     /**
