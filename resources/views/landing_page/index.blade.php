@@ -14,9 +14,8 @@
                     {{-- <a href="javascript:void(0)"
                         class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 mb-3 animated bounceInLeft">Team
                         Penulis Kami</a> --}}
-                    <a href="javascript:void(0)"
-                        class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 mb-3 animated bounceInUp">Lihat
-                        Informasi</a>
+                    <a href="#penulis"
+                        class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 mb-3 animated bounceInUp">Team Penulis Kami</a>
                 </div>
                 <div class="col-lg-5 col-md-12">
                     <img src="{{ asset('Assets/img/home_image.png') }}" class="img-fluid rounded animated zoomIn"
@@ -306,7 +305,7 @@
     <!-- Blog End -->
 
     <!-- Team Start -->
-    <div class="container-fluid team py-6">
+    <div class="container-fluid team py-6" id="penulis">
         <div class="container">
             <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
                 <small
