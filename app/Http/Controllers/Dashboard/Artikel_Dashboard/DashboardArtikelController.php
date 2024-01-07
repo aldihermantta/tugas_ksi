@@ -60,7 +60,9 @@ class DashboardArtikelController extends Controller
         );
 
         $dom = new \DomDocument();
+        libxml_use_internal_errors(true);
         $dom->loadHtml($request->content, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
+        libxml_clear_errors();
         $imageFile = $dom->getElementsByTagName('img');
 
         $tumblr = "";
