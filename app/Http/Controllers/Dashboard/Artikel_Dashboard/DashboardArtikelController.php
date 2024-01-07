@@ -73,6 +73,9 @@ class DashboardArtikelController extends Controller
         $artikel->slug = Str::of($request->judul)->slug('-');
         $artikel->save();
 
+        $id = $artikel->id;
+        $directory = "/upload/{$id}";
+
         foreach ($imageFile as $item => $image) {
 
             if ($item == 0) {
@@ -84,8 +87,7 @@ class DashboardArtikelController extends Controller
             list(, $data) = explode(',', $data);
             $imgeData = base64_decode($data);
 
-            $id = $artikel->id;
-            $directory = "/upload/{$id}";
+
             $image_name = "{$directory}/" . time() . $item . '.png';
 
             $path = public_path($directory); // Set the directory path
