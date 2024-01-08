@@ -244,7 +244,7 @@
                                     <p class="fw-bold mb-0">Sep</p>
                                 </div>
                             </div> --}}
-                            <a href="{{ route('artikel.show', $list->slug) }}" class="h5 lh-base my-auto h-100 p-3">{{
+                            <a href="{{ route('detail-informasi', $list->slug) }}" class="h5 lh-base my-auto h-100 p-3">{{
                                 $list->judul }}</a>
                         </div>
                     </div>
