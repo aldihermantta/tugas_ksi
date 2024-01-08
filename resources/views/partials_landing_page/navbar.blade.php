@@ -12,7 +12,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav mx-auto">
                     <a href="{{ route('home-alun-alun') }}" class="nav-item nav-link active">Home</a>
-                    <a href="#about" class="nav-item nav-link">Tentang Web Ini</a>
+                    <a href="{{ route('home-alun-alun') }}#about" class="nav-item nav-link">Tentang Web Ini</a>
                     {{-- <a href="service.html" class="nav-item nav-link">Services</a> --}}
                     <a href="{{ route('halaman-informasi') }}" class="nav-item nav-link">Informasi Alun - Alun</a>
                     {{-- <a href="menu.html" class="nav-item nav-link">Menu</a>
